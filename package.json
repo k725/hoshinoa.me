@@ -1,0 +1,16 @@
+{
+  "name": "hoshinoa.me",
+  "version": "1.0.0",
+  "description": "My home page",
+  "repository": "https://k725@github.com/k725/hoshinoa.me.git",
+  "author": "k725 <k725@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn build:css",
+    "build:css": "lessc --clean-css=\"--s1 --advanced\" style.less style.min.css"
+  },
+  "devDependencies": {
+    "less": "^4.1.1",
+    "less-plugin-clean-css": "^1.5.1"
+  }
+}
