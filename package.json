@@ -10,7 +10,7 @@
     "build:css": "lessc --clean-css=\"--s1 --advanced\" style.less style.min.css"
   },
   "devDependencies": {
-    "less": "^4.1.1",
+    "less": "^4.2.0",
     "less-plugin-clean-css": "^1.5.1"
   }
 }
