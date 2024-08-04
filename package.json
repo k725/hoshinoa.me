@@ -6,10 +6,12 @@
   "author": "k725 <k725@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "build": "yarn build:css",
-    "build:css": "lessc --clean-css=\"--s1 --advanced\" style.less style.min.css"
+    "build": "yarn build:css && yarn copy",
+    "build:css": "lessc --clean-css=\"--s1 --advanced\" src/style.less docs/style.min.css",
+    "copy": "cpy ./src/* ./docs/"
   },
   "devDependencies": {
+    "cpy-cli": "5.0.0",
     "less": "^4.2.0",
     "less-plugin-clean-css": "^1.5.1"
   }
